@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgoTrader.App.ViewModels
 {
-    public class ViewModelBase
+    public class PortfolioViewModel : ViewModelBase
     {
-
     }
 }

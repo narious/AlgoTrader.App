@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AlgoTrader.App.Controls"
+             xmlns:nav="clr-namespace:AlgoTrader.App.States.Navigators"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -12,8 +13,8 @@
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Text="AlgoTrader" />
-        <Grid Grid.Row="1">
+        <TextBlock Grid.Row="0" Text="AlgoTrader" Background="{StaticResource BrushPrimary1}" />
+        <Grid Grid.Row="1" Background="{StaticResource BrushPrimary2}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
@@ -22,8 +23,8 @@
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <RadioButton Grid.Column="0" Content="Home" />
-            <RadioButton Grid.Column="1" Content="Portfolio" />
+            <RadioButton Grid.Column="0" Content="Home" Command="{Binding UpdateCurrentViewModelCommand}" CommandParameter="{x:Static nav:ViewModelTypes_e.Home}"/>
+            <RadioButton Grid.Column="1" Content="Portfolio" Command="{Binding UpdateCurrentViewModelCommand}" CommandParameter="{x:Static nav:ViewModelTypes_e.Portfolio}"/>
             <RadioButton Grid.Column="2" Content="Buy" />
             <RadioButton Grid.Column="3" Content="Sell" />
             <RadioButton Grid.Column="4" Content="Tax" />

@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Colors -->
+    <Color x:Key="ColorPrimary1">#3F72AF</Color>
+    <Color x:Key="ColorPrimary2">#112D4E</Color>
+    <Color x:Key="ColorPrimary3">#DBE2EF</Color>
+    <Color x:Key="ColorPrimary4">#F9F7F7</Color>
+    
+    <!-- Brushes -->
+    <SolidColorBrush x:Key="BrushPrimary1" Color="{StaticResource ColorPrimary1}" />
+    <SolidColorBrush x:Key="BrushPrimary2" Color="{StaticResource ColorPrimary2}" />
+    <SolidColorBrush x:Key="BrushPrimary3" Color="{StaticResource ColorPrimary3}" />
+    <SolidColorBrush x:Key="BrushPrimary4" Color="{StaticResource ColorPrimary4}" />
+</ResourceDictionary>

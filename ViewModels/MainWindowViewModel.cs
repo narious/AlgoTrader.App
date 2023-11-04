@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlgoTrader.App.States.Navigators;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace AlgoTrader.App.ViewModels
 {
     internal class MainWindowViewModel : ViewModelBase
     {
+        public INavigator Navigator { get; set; } = new Navigator();
     }
 }
